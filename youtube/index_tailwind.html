@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="css/style_tailwind.css">
+        <title>Document</title>
+    </head>
+    <body class="w-11/12 m-auto pt-5">
+        <header>
+            <div class="flex">
+                <div class="flex w-1/2 items-center">
+                    <img src="img/logo.png" id="logo"/>
+                </div>
+                <div class="flex w-1/2 justify-end">
+                    <button class="m-2 rounded-full bg-[#D9D9D9] text-black font-bold py-2 px-4">Connexion / Inscription</button>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="w-full">
+                    <form class="flex items-center">   
+                        <label for="simple-search" class="sr-only">Search</label>
+                        <div class="relative w-full">
+                            <input type="text" id="simple-search" class="m-auto w-full mt-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 rounded-full" placeholder="Search" required>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <nav class="bg-[#D9D9D9] fixed bottom-0 left-0 right-0 w-full" id="nav-mobile">
+                <div class="flex justify-around max-w-screen-xl px-4 py-3 mx-auto md:px-6">
+                    <div class="flex">
+                        <ul class="flex flex-row space-x-8 text-sm font-medium">
+                            <li>
+                                <div class="flex justify-center"><img src="img/accueil.png"/></div>
+                                <div class=""><a href="#" class="text-gray-900 dark:text-white hover:underline" aria-current="page">Accueuil</a></div>
+                            </li>
+                            <li>
+                                <div class="flex justify-center"><img src="img/play-button.png"/></div>
+                                <div class=""><a href="#" class="text-gray-900 dark:text-white hover:underline" aria-current="page">Bibliothèque</a></div>
+                            </li>
+                            <li>
+                                <div class="flex justify-center"><img src="img/historique.png"/></div>
+                                <div class=""><a href="#" class="text-gray-900 dark:text-white hover:underline" aria-current="page">Historique</a></div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container-body flex justify-between pt-10">
+            <slidebar class="sidebar-left hidden lg:block md:block">
+                <div class="container-sidebar flex flex-col">
+                    <div class="row-container-sidebar flex pb-10">
+                        <div class="">
+                            <img src="img/accueil.png" class="logo-sidebar"/>
+                        </div>
+                        <div class="pl-3">
+                            <a href="">Accueil</a>
+                        </div>
+                    </div>
+                    <div class="row-container-sidebar flex pb-10">
+                        <div class="">
+                            <img src="img/loupe.png" class="logo-sidebar"/>
+                        </div>
+                        <div class="pl-3">
+                            <a href="">Abonnement</a>
+                        </div>
+                    </div>
+                    <hr class="pb-10">
+                    <div class="row-container-sidebar flex pb-10">
+                        <div class="">
+                            <img src="img/play-button.png" class="logo-sidebar"/>
+                        </div>
+                        <div class="pl-3">
+                            <a href="">Bibliothèque</a>
+                        </div>
+                    </div>
+                    <div class="row-container-sidebar flex pb-10">
+                        <div class="">
+                            <img src="img/historique.png" class="logo-sidebar"/>
+                        </div>
+                        <div class="pl-3">
+                            <a href="">Historique</a>
+                        </div>
+                    </div>
+                    <div class="row-container-sidebar flex pb-10">
+                        <div class="">
+                            <img src="img/clock.png" class="logo-sidebar"/>
+                        </div>
+                        <div class="pl-3">
+                            <a href="">Regarder plus tard</a>
+                        </div>
+                    </div>
+                    <div class="row-container-sidebar flex pb-10">
+                        <div class="">
+                            <img src="img/like.png" class="logo-sidebar"/>
+                        </div>
+                        <div class="pl-3">
+                            <a href="">J'aime</a>
+                        </div>
+                    </div>
+                </div>
+            </slidebar>
+            <div class="container-video w-4/5">
+                <div class="flex flex-col lg:flex-row lg:gap-5  md:flex-row md:gap-5 sm:flex-col">
+                    <div class="video mb-10 lg:w-1/3 md:w-1/2 sm:w-full">
+                        <iframe width="100%" height="250" src="https://www.youtube.com/embed/c3RhabO8_Fs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+                        <div class="container-text-video">
+                            <h2 class="pt-3 font-bold">Comment la France va-t-elle s’en sortir ? </h2>
+                            <h3 class="chanel">Thinkerview</h3>
+                            <h4>5 k vues • il y a 4 heures</h4>
+                        </div>
+                    </div>
+                    <div class="video mb-10 lg:w-1/3 md:w-1/2 sm:w-full">
+                        <iframe width="100%" height="250" src="https://www.youtube.com/embed/c3RhabO8_Fs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+                        <div class="container-text-video">
+                            <h2 class="pt-3 font-bold">Comment la France va-t-elle s’en sortir ? </h2>
+                            <h3 class="chanel">Thinkerview</h3>
+                            <h4>5 k vues • il y a 4 heures</h4>
+                        </div>
+                    </div>
+                    <div class="video mb-10 lg:w-1/3 md:w-1/2  sm:w-full">
+                        <iframe width="100%" height="250" src="https://www.youtube.com/embed/c3RhabO8_Fs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+                        <div class="container-text-video">
+                            <h2 class="pt-3 font-bold">Comment la France va-t-elle s’en sortir ? </h2>
+                            <h3 class="chanel">Thinkerview</h3>
+                            <h4>5 k vues • il y a 4 heures</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-5 flex flex-col lg:flex-row lg:gap-5  md:flex-row md:gap-5 sm:flex-col">
+                    <div class="video mb-10 lg:w-1/3 md:w-1/2 sm:w-full">
+                        <iframe width="100%" height="250" src="https://www.youtube.com/embed/c3RhabO8_Fs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+                        <div class="container-text-video">
+                            <h2 class="pt-3 font-bold">Comment la France va-t-elle s’en sortir ? </h2>
+                            <h3 class="chanel">Thinkerview</h3>
+                            <h4>5 k vues • il y a 4 heures</h4>
+                        </div>
+                    </div>
+                    <div class="video mb-10 lg:w-1/3 md:w-1/2 sm:w-full">
+                        <iframe width="100%" height="250" src="https://www.youtube.com/embed/c3RhabO8_Fs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+                        <div class="container-text-video">
+                            <h2 class="pt-3 font-bold">Comment la France va-t-elle s’en sortir ? </h2>
+                            <h3 class="chanel">Thinkerview</h3>
+                            <h4>5 k vues • il y a 4 heures</h4>
+                        </div>
+                    </div>
+                    <div class="video mb-10 lg:w-1/3 md:w-1/2  sm:w-full">
+                        <iframe width="100%" height="250" src="https://www.youtube.com/embed/c3RhabO8_Fs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+                        <div class="container-text-video">
+                            <h2 class="pt-3 font-bold">Comment la France va-t-elle s’en sortir ? </h2>
+                            <h3 class="chanel">Thinkerview</h3>
+                            <h4>5 k vues • il y a 4 heures</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="pb-20">
+            <div class="flex">
+                <div class="w-full flex justify-center pb-10">
+                    © 2022 Google LLC | Conditions d’utilisation
+                </div>
+            </div>  
+        </footer>
+        <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js%22%3E"></script>
+    </body>
+</html>
